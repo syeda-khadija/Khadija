@@ -124,24 +124,64 @@
 #  Rectangle_formula(L,B)
 
 
-BMI_calculation<-function(){
-  height<-as.numeric(readline("Enter heigth in meter :"))
-  weight<-as.numeric(readline("Enter weight in Kg :"))
+#BMI_calculation<-function(){
+#  height<-as.numeric(readline("Enter heigth in meter :"))
+#  weight<-as.numeric(readline("Enter weight in Kg :"))
   
-  BMI<-weight/(height^2)
+#  BMI<-weight/(height^2)
   
-  if(BMI <18.5){
-    print("underweight")
-  }else if(BMI > 18.5 && BMI <24.9){
-    print("Normal")
-  }else if(BMI > 25 && BMI <29.9){
-    print("Over weight")
-  }else if(BMI > 30){
-    print("Obese")                                             
-  }else{
-    print("Invalid BMI")
-  }
-  cat("BMI is :",BMI)
-}
-BMI_calculation()
-  
+#  if(BMI <18.5){
+#   print("underweight")
+#   }else if(BMI > 18.5 && BMI <24.9){
+#     print("Normal")
+#   }else if(BMI > 25 && BMI <29.9){
+#     print("Over weight")
+#   }else if(BMI > 30){
+#     print("Obese")                                             
+#   }else{
+#     print("Invalid BMI")
+#   }
+#   cat("BMI is :",BMI)
+# }
+# BMI_calculation()
+
+
+#VECTOR
+# prime_minister <- c("Liaquat ali Khan","Zulfikar Ali Bhutto" ,"Benazir Bhutto","Nawaz sharif","Imran Khan")
+# 
+# for (a in prime_minister) {
+#   print(a)
+# }
+# print(prime_minister[-2])
+# print(prime_minister[c(3,5)])
+# print(prime_minister[c(-2,-5)])
+# print(prime_minister[1:4])
+
+#LIST
+# Movie <-list(
+#   name ="Game of Thrones",
+#   Budget ="$15 million per episode",
+#   genre =" Adventure",
+#   cast=c("Emilia Clarke","Iain Glen","Maisie Williams","Lena Headey","Kit Harington"),
+#   avaliable_on_ott=TRUE,
+#   verdict ="hit"
+# )
+# cat("movie Name is:",Movie$name,"\ncast is :",Movie$cast)
+# cat("\n\nMovie name is :",Movie$name ,"\ngenre is :",Movie$genre)
+# cat("\n\nMovie name is:",Movie$name,"\nverdict is:",Movie$verdict)
+
+#DATA_FRAME
+movie_name <- c("Damsel","Evil Dead Rise","Crawl","Game of Thrones")
+movie_genre <-c("Adventure","Horror","Thriller","Adventure")
+movie_cast<-c("Millie Bobby Brown","Alyssa Sutherland ","Barry Pepper","Emilia Clarke")
+Avaliable <-c("yes","yes","no","yess")
+verdict <-c("hit","flop","hit","flop")
+
+movie_info<-data.frame(
+  Name=movie_name,
+  Genre=movie_genre,
+  Cast=movie_cast,
+  Avaliable=Avaliable,
+  verdict=verdict
+)
+print(movie_info)
