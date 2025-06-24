@@ -171,17 +171,37 @@
 # cat("\n\nMovie name is:",Movie$name,"\nverdict is:",Movie$verdict)
 
 #DATA_FRAME
-movie_name <- c("Damsel","Evil Dead Rise","Crawl","Game of Thrones")
-movie_genre <-c("Adventure","Horror","Thriller","Adventure")
-movie_cast<-c("Millie Bobby Brown","Alyssa Sutherland ","Barry Pepper","Emilia Clarke")
-Avaliable <-c("yes","yes","no","yess")
-verdict <-c("hit","flop","hit","flop")
+# movie_name <- c("Damsel","Evil Dead Rise","Crawl","Game of Thrones")
+# movie_genre <-c("Adventure","Horror","Thriller","Adventure")
+# movie_cast<-c("Millie Bobby Brown","Alyssa Sutherland ","Barry Pepper","Emilia Clarke")
+# Avaliable <-c("yes","yes","no","yess")
+# verdict <-c("hit","flop","hit","flop")
+# 
+# movie_info<-data.frame(
+#   Name=movie_name,
+#   Genre=movie_genre,
+#   Cast=movie_cast,
+#   Avaliable=Avaliable,
+#   verdict=verdict
+# )
+# print(movie_info)
 
-movie_info<-data.frame(
-  Name=movie_name,
-  Genre=movie_genre,
-  Cast=movie_cast,
-  Avaliable=Avaliable,
-  verdict=verdict
+#Employee
+
+Name <- c("Sara","Ali","Ahmed","Amal","Sameer")
+no_of_workingdays <- c(28,19,18,8,10)
+no_of_lateArrival <-c(4,6,2,1,0)
+Department  <-c("Hr","IT","Marketing","Accounting","Product Management")
+Designation <- c("Assistant","Employee","Employee","Manager","CEO")
+Gender <-c("Female","Male","Male","Female","Male")
+Is_permenant <-c("True","True","False","True","True")
+
+Employee_info <-data.frame(
+  Name =Name,
+  Late_arrival=no_of_lateArrival,
+  Department =Department,
+  Designation=Designation,
+  Gender=Gender,
+  Is_permenant =Is_permenant
 )
-print(movie_info)
+print(Employee_info)
